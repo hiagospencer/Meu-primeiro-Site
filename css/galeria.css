@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:wght@100;300 & family= Montserrat:wght@100 & family= Tai+Heritage+Pro:wght@400; 700 & family= Tiro+Telugu & family= Titillium+Web & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+htmml,body{
+    height: 100%;
+    background-color: #dddee2;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Aqui começa a formatação do header*/
+
+ .container{position: relative;
+     width: 100%;
+     height: auto;
+     min-height: 200px;
+     background-image: url(../imagens/capa2.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+.logo{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+ .logo img{
+    width: 250px;
+    height: 120px; 
+    opacity: 0.8;
+    border-bottom: 1px solid white;
+ }
+
+ .menu-desktop{
+    width: 100%;
+ }
+
+ .menu-desktop nav{
+    background-color: #212343;
+    text-align: center;
+    border-top: 1px solid white;
+ }
+
+ .menu-desktop nav ul{
+    list-style-type: none;
+ }
+
+ .menu-desktop nav ul li{
+     display: inline-block;
+     font-size: 22px;
+     margin: 20px 2%;
+     padding:0 6%;
+ }
+
+ .menu-desktop a{
+     color: white;
+     text-decoration: none;
+ }
+
+.menu-desktop a:hover{
+    color: rgb(253, 182, 75);
+    transition: 0.4s;
+ }
+
+ .menu-mobile{
+     display: none;
+    text-align: right;
+}
+
+.menu-mobile i{
+    display: none;
+    cursor: pointer;
+    color: rgb(224, 100, 100);
+    font-size: 40px;
+    position: absolute;
+    top:40px;
+    right: 5px;
+}
+
+.menu-mobile ul {
+    background-color:white;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    text-align: center;
+}
+
+.show-menu{
+    opacity: 1 !important;
+}
+
+.menu-mobile ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+.menu-mobile ul li a:hover{
+    background-color: #ccc;
+    transition: 0.7s;
+}
+
+
+/* Aqui terminar a formatação do header */
+
+
+
+
+/* AQUI COMEÇA A FORMATAÇÃO DA GALERIA */
+
+section.sessao-galeria{
+    min-height: 100vh;
+}
+
+.text-galeria{
+    margin: 20px 2%;
+    text-align: center;
+}
+
+.text-galeria h2{
+    padding: 10px 0;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.text-galeria p{
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(22, 22, 22);
+}
+
+.text-galeria h3{
+    padding: 10px 0;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.galeria{
+    display: flex;
+    overflow: scroll;
+    border: 1px solid #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.galeria img{
+    opacity: 0.5;
+    width: 80px;
+    border: 1px solid #212343;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 0;
+}
+
+.galeria img:hover{
+    opacity: 1;
+}
+
+.container-1{
+    position: relative;
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.container-1 img{
+    width: 70%;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(53, 53, 53);
+    margin: 20px 0;
+    
+}
+
+.btn-fechar{
+    position: absolute;
+    top: 20px;
+    right: 260px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgba(65, 68, 65, 0.8);
+    
+}
+
+/* aqui termina a formatação da galeria */
+
+
+
+/* Aqui começa a formatação do footer*/
+
+footer{
+    color: white;
+    background-color: #212343;
+    border-top: 1px solid black;
+    padding:30px 2%;
+}
+
+.rodape p{
+    text-align: center;
+    line-height: 30px;
+}
+
+footer.rodape p a:nth-of-type(1){
+    color: rgb(19, 102, 19);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+.criador{
+    text-align: center;
+}
+
+.criador > a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 19px;
+}
+
+.criador span{
+    color: #f9004d;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.fb{
+    color: #ccc;
+    font-size: 19px;
+}
+
+
+/* Aqui termina a formatação do footer */
+
+
+
+@media screen and (max-width: 1280px){
+    .container-1 img{
+        width: 100%;
+     }
+     
+    .btn-fechar{
+        top: 20px;
+        right: 10px;
+        color: rgba(65, 68, 65, 0.8);
+         
+     }
+
+}
+
+ @media screen and (max-width: 932px) {
+
+    .menu-mobile{
+        display: block;
+    }
+   
+     .menu-desktop{
+         display: none;
+     }
+
+    .menu-mobile i{
+      display: block;
+    }
+    
+    
+    .container-1 img{
+        width: 100%;
+    }
+
+    .btn-fechar{
+        top: 20px;
+        right: 10px;
+        color: rgba(65, 68, 65, 0.8);
+    
+    }
+
+ }
+
+ @media screen and (max-width: 320px){
+     .logo img{
+         width: 100%;
+         text-align: center;
+         padding:0 2%;
+     }
+
+     .menu-mobile > img{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -100px;
+    }
+ }

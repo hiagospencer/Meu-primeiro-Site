@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:wght@100;300 & family= Montserrat:wght@100 & family= Tai+Heritage+Pro:wght@400; 700 & family= Tiro+Telugu & family= Titillium+Web & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+htmml,body{
+    height: 100%;
+    background-color: #dddee2;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Aqui começa a formatação do header*/
+
+ .container{position: relative;
+     width: 100%;
+     height: auto;
+     min-height: 200px;
+     background-image: url(../imagens/capa2.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+.logo{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+ .logo img{
+    width: 250px;
+    height: 120px; 
+    opacity: 0.8;
+    border-bottom: 1px solid white;
+ }
+
+ .menu-desktop{
+    width: 100%;
+ }
+
+ .menu-desktop nav{
+    background-color: #212343;
+    text-align: center;
+    border-top: 1px solid white;
+ }
+
+ .menu-desktop nav ul{
+    list-style-type: none;
+ }
+
+ .menu-desktop nav ul li{
+     display: inline-block;
+     font-size: 22px;
+     margin: 20px 2%;
+     padding:0 6%;
+ }
+
+ .menu-desktop a{
+     color: white;
+     text-decoration: none;
+ }
+
+.menu-desktop a:hover{
+    color: rgb(253, 182, 75);
+    transition: 0.4s;
+ }
+
+ .menu-mobile{
+    display: none;
+    text-align: right;
+}
+
+.menu-mobile i{
+    display: block;
+    cursor: pointer;
+    color: rgb(224, 100, 100);
+    font-size: 40px;
+    position: absolute;
+    top:40px;
+    right: 5px;
+}
+
+.menu-mobile ul {
+    background-color:white;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    text-align: center;
+}
+
+.show-menu{
+    opacity: 1 !important;
+}
+
+.menu-mobile ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+.menu-mobile ul li a:hover{
+    background-color: #ccc;
+    transition: 0.7s;
+}
+
+
+/* Aqui terminar a formatação do Header */
+
+
+
+/* Aqui começa a formatação do Acessorios */
+
+.texto-album {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.texto-album h2{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 0 2%;
+    font-style: italic;
+}
+
+.texto-album p{
+    padding: 20px 4%;
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(22, 22, 22);
+    line-height: 30px;
+}
+
+section span{
+    padding-left: 4%;
+    font-size: 20px;
+    color:rgb(22, 22, 22); ;
+}
+
+section a{
+    text-decoration: none;
+    color: #2cac3d;
+    font-size: 27px;
+}
+
+ul#album-acessorios {
+    width: 100%;
+    margin:0 auto;
+    padding: 40px 0;
+    padding-left: 20px;
+    overflow:hidden;
+    list-style: none;
+}
+
+ul#album-acessorios li {
+    float: left;
+    width: 200px;
+    height:200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-acessorios li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-acessorios li:hover{
+    -webkit-transform: scale(1.3);
+}
+
+ul#album-acessorios li:hover span{
+    opacity:1;
+}
+
+ul#album-acessorios li#acessorios-01{
+    background: url(../imagens/acessorio-01.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-02{
+    background: url(../imagens/acessorio-02.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-03{
+    background: url(../imagens/acessorio-03.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-04{
+    background: url(../imagens/acessorio-04.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-05{
+    background: url(../imagens/acessorio-05.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+
+ul#album-acessorios li#acessorios-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-06{
+    background: url(../imagens/acessorio-06.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-07{
+    background: url(../imagens/acessorio-07.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+
+ul#album-acessorios li#acessorios-07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-08{
+    background: url(../imagens/acessorio-08.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-09{
+    background: url(../imagens/acessorio-09.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-09:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-10{
+    background: url(../imagens/acessorio-10.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+
+ul#album-acessorios li#acessorios-10:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-11{
+    background: url(../imagens/acessorio-11.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-11:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-12{
+    background: url(../imagens/acessorio-12.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-12:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-13{
+    background: url(../imagens/acessorio-13.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-13:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-14{
+    background: url(../imagens/acessorio-14.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+
+ul#album-acessorios li#acessorios-14:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-15{
+    background: url(../imagens/acessorio-15.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-15:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-16{
+    background: url(../imagens/acessorio-16.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-16:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-17{
+    background: url(../imagens/acessorio-17.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-17:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-18{
+    background: url(../imagens/acessorio-18.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+
+ul#album-acessorios li#acessorios-18:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-19{
+    background: url(../imagens/acessorio-19.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-19:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-20{
+    background: url(../imagens/acessorio-20.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-20:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-21{
+    background: url(../imagens/acessorio-21.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-21:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-acessorios li#acessorios-22{
+    background: url(../imagens/acessorio-22.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-22:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}ul#album-acessorios li#acessorios-23{
+    background: url(../imagens/acessorio-23.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-23:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-24{
+    background: url(../imagens/acessorio-24.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-24:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-25{
+    background: url(../imagens/acessorio-25.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-25:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-26{
+    background: url(../imagens/acessorio-26.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-26:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-27{
+    background: url(../imagens/acessorio-27.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-27:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-28{
+    background: url(../imagens/acessorio-28.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-28:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-29{
+    background: url(../imagens/acessorio-29.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-29:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-30{
+    background: url(../imagens/acessorio-30.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-30:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-acessorios li#acessorios-32{
+    background: url(../imagens/acessorio-32.jpeg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-acessorios li#acessorios-32:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/* Aqui termina a formatação da Acessorios*/
+
+
+
+/* Aqui começa a formatação do footer*/
+
+footer{
+    color: white;
+    background-color: #212343;
+    border-top: 1px solid black;
+    padding:30px 2%;
+}
+
+.rodape p{
+    text-align: center;
+    line-height: 30px;
+}
+
+footer.rodape p a:nth-of-type(1){
+    color: rgb(19, 102, 19);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+.criador{
+    text-align: center;
+}
+
+.criador > a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 19px;
+}
+
+.criador span{
+    color: #f9004d;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.fb{
+    color: #ccc;
+    font-size: 19px;
+}
+
+/* Aqui termina a formatação do footer */
+
+
+@media screen and (max-width: 1280px){
+    .container-1 img{
+        width: 100%;
+     }
+     
+    .btn-fechar{
+        top: 20px;
+        right: 10px;
+        color: rgba(65, 68, 65, 0.8);
+         
+     }
+
+}
+
+ @media screen and (max-width: 932px) {
+
+    section span{
+        display: block;
+        text-align: center;
+    }
+
+   
+    section a{
+       display: block;
+       text-align:center;
+    }
+   
+    .menu-mobile{
+        display: block;
+    }
+
+     .menu-desktop{
+         display: none;
+     }
+
+     .menu-mobile i{
+        display: block;
+    }
+
+    .menu-mobile a:hover{
+       background-color: white;
+       transition: 0.4s;
+
+   }
+
+    .container-1 img{
+        width: 100%;
+}
+
+    .btn-fechar{
+        top: 20px;
+        right: 10px;
+        color: rgba(65, 68, 65, 0.8);
+    
+}
+
+ }
+
+ @media screen and (max-width: 920px){
+
+
+    ul#album-acessorios li:hover span{
+        opacity:0;
+    }
+}
+
+
+ @media screen and (max-width: 320px){
+    .logo img{
+         width: 100%;
+         text-align: center;
+         padding:0 2%;
+    }
+
+  
+ }
+
+ @media screen and (max-width:990px) {
+    .Album {
+        width: 100%;
+    
+
+    }
+ }
